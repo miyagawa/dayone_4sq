@@ -1,0 +1,10 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ri_cal (0.8.8)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  ri_cal
