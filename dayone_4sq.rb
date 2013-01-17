@@ -62,7 +62,7 @@ class Importer
       raise Done
     end
     Open3.popen3('dayone', "-d=#{checkin.time}", 'new') do |stdin, stdout, stderr|
-      stdin.write("@ " + checkin.venue + " via " + checkin.url)
+      stdin.write("@ " + checkin.venue + " " + checkin.url)
       stdin.close_write
       puts stdout.read
     end
